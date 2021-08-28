@@ -23,5 +23,12 @@ IF OBJECT_ID('dbo.vw_users', 'V') IS NOT NULL
 
 IF NOT EXISTS (SELECT * FROM sys.schemas WHERE name = 'user')
 BEGIN
-EXEC('CREATE SCHEMA user')
+	EXEC('CREATE SCHEMA user')
 END
+
+-- Schema
+IF NOT EXISTS ( SELECT  *
+                FROM    sys.schemas
+                WHERE   name = N'stock' )
+    EXEC('CREATE SCHEMA [stock]');
+GO
