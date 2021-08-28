@@ -1,0 +1,5 @@
+01.DT.wf_parametros.sql
+02.TB.Tmp_borrar.sql
+03.SC.Eliminar-indices.sql
+04.SC.script_depuracion_inicial.sql
+05.SC.script_reenumerar_pk.sql

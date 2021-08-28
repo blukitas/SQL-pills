@@ -1,0 +1,31 @@
+Paquete Proceso - db.produccion
+
+000.DT.deploy.sql
+001.TB.Tablas_depurar_SPV.sql
+002.TB.Tabla_temp.sql
+003.TB.tmp_dependencias_SPV.sql
+004.DT.wf_parametros.sql
+005.DT.tablas_depurar.sql
+006.SP.wf_p_chequear_dependencias_SPV.sql
+007.SP.wf_p_pase_historico_SPV.sp.sql
+008.SP.wf_p_pase_historico_cob_SPV.sp.sql
+009.SP.wf_p_pase_historico_csa_SPV.sp.sql
+010.SP.wf_p_pase_historico_cct_SPV.sp.sql
+011.SP.wf_p_pase_historico_ctf_SPV.sp.sql
+
+---------------------------------------------------------
+
+Paquete Proceso - db.historica 
+
+000.DT.deploy.sql
+001.TB.Tablas_depurar_SPV.sql
+002.TB.Tabla_temp.sql
+003.TB.tmp_dependencias_SPV.sql
+004.DT.wf_parametros.sql
+005.DT.tablas_depurar.sql
+006.SP.wf_p_chequear_dependencias_SPV.sql
+007.SP.wf_p_pase_historico_SPV.sp.sql
+008.SP.wf_p_pase_historico_cob_SPV.sp.sql
+009.SP.wf_p_pase_historico_csa_SPV.sp.sql
+010.SP.wf_p_pase_historico_cct_SPV.sp.sql
+011.SP.wf_p_pase_historico_ctf_SPV.sp.sql

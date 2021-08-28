@@ -1,0 +1,81 @@
+Use Emerix
+GO
+
+if exists (select 1 from tablas_depurar_BGP where  atd_tabla='cuentas'  )
+begin
+	update tablas_depurar_BGP set 
+	atd_SP='wf_p_pase_historico_cta_BGP',
+	atd_orden=6,
+	atd_baja_fecha=null
+	where  atd_tabla='cuentas'
+end
+else
+begin
+	insert into tablas_depurar_BGP values('cuentas','wf_p_pase_historico_cta_BGP',6,'','20181122',null,null,1,'')
+end
+
+if exists (select 1 from tablas_depurar_BGP where  atd_tabla='acciones'  )
+begin
+	update tablas_depurar_BGP set 
+	atd_SP='wf_p_pase_historico_acc_BGP',
+	atd_orden=5,
+	atd_baja_fecha=null
+	where  atd_tabla='acciones'
+end
+else
+begin
+	insert into tablas_depurar_BGP values('acciones','wf_p_pase_historico_acc_BGP',5,'','20181122',null,null,1,'')
+end
+
+if exists (select 1 from tablas_depurar_BGP where  atd_tabla='movimientos'  )
+begin
+	update tablas_depurar_BGP set 
+	atd_SP='wf_p_pase_historico_mov_BGP',
+	atd_orden=1,
+	atd_baja_fecha=null
+	where  atd_tabla='movimientos'
+end
+else
+begin
+	insert into tablas_depurar_BGP values('movimientos','wf_p_pase_historico_mov_BGP',1,'','20181122',null,null,1,'')
+end
+
+if exists (select 1 from tablas_depurar_BGP where  atd_tabla='cmb_cta'  )
+begin
+	update tablas_depurar_BGP set 
+	atd_SP='wf_p_pase_historico_cct_BGP',
+	atd_orden=2,
+	atd_baja_fecha=null
+	where  atd_tabla='cmb_cta'
+end
+else
+begin
+	insert into tablas_depurar_BGP values('cmb_cta','wf_p_pase_historico_cct_BGP',2,'','20181122',null,null,1,'')
+end
+
+if exists (select 1 from tablas_depurar_BGP where  atd_tabla='wf_cmb_objetos'  )
+begin
+	update tablas_depurar_BGP set 
+	atd_SP='wf_p_pase_historico_cob_BGP',
+	atd_orden=4,
+	atd_baja_fecha=null
+	where  atd_tabla='wf_cmb_objetos'
+end
+else
+begin
+	insert into tablas_depurar_BGP values('wf_cmb_objetos','wf_p_pase_historico_cob_BGP',4,'','20181122',null,null,1,'')
+end
+
+if exists (select 1 from tablas_depurar_BGP where  atd_tabla='carga_masiva_arch'  )
+begin
+	update tablas_depurar_BGP set 
+	atd_SP='wf_p_pase_historico_cma_BGP',
+	atd_orden=3,
+	atd_baja_fecha=null
+	where  atd_tabla='carga_masiva_arch'
+end
+else
+begin
+	insert into tablas_depurar_BGP values('carga_masiva_arch','wf_p_pase_historico_cma_BGP',3,'','20181122',null,null,1,'')
+end
+GO
